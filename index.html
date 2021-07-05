@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div class="entryform">
+		<div class='bookdetails'>
+			<label for="bookname" autofocus>Title</label>
+      <input id="booktitle" />
+
+      <label for="bookauthor">Author</label>
+      <input id="bookauthor" />
+      
+      <label for="bookgenre">Genre</label>
+      <input id="bookgenre" list="genredatalist" />
+      <datalist id="genredatalist"></datalist>
+
+      <label for="bookpages">Length</label>
+      <div class='length'>
+        <input id="bookpages" type="number" />
+        
+        <label for="bookrating">Rating</label>
+        
+        <div class="ratingcontainer">
+        <span id="star1" class="rating rating-star-full"></span>
+        <span id="star2" class="rating rating-star"></span>
+        <span id="star3" class="rating rating-star"></span>
+        <span id="star4" class="rating rating-star"></span>
+        <span id="star5" class="rating rating-star"></span>
+        </div>
+      </div>
+
+<label for="bookinfluence">Influence</label>
+        <div id="influencecontainer" class="influencecontainer">
+          <span id="influence1" class="influencebase rating"></span>
+          <span id="influence2" class="influencebase rating"></span>
+          <span id="influence3" class="influencebase rating"></span>
+          <span id="influence4" class="influencebase rating"></span>
+          <span id="influence5" class="influencebase rating"></span>
+          <span id="influence6" class="influencebase rating"></span>
+          <span id="influence7" class="influencebase rating"></span>
+          <span id="influence8" class="influencebase rating"></span>
+          <span id="influence9" class="influencebase rating"></span>
+          <span id="influence10" class="influencebase rating"></span>
+        </div>
+        
+      <label for="bookseries">Series</label>
+      <input id="bookseries" />
+      
+      <label for="bookcurrent">Episode</label>
+      <div class='episodedetails'>
+        <input id="bookcurrent" type="number" class="episodeinputs"/>
+        <label for="booktotal">of </label>
+        <input id="booktotal" type="number" class="episodeinputs" />
+      </div>
+    </div>
+    <div class="readwhen borderedbox">
+        <div class="readwhentitle borderedboxtitle liftedcontent">When to read</div>
+        <div class="readlayout liftedcontent">
+          <label for="readafter">After</label>
+          <input id="readafter" />
+          <label for="readbefore">Before</label>
+          <input id="readbefore" />
+        </div>
+      </div>
+    <div class="readgroup borderedbox">
+      <div class="readgrouptitle borderedboxtitle liftedcontent">Read By</div>
+      <div class="liftedcontent">
+        <input id="readybyKelly" type="checkbox" /><label for="readybyKelly">Kelly</label>
+        <input id="readybyKevin" type="checkbox" /><label for="readybyKevin">Kevin</label>
+        <input id="readybyDominic" type="checkbox" /><label for="readybyDominic">Dominic</label>
+        <input id="readybyXander" type="checkbox" /><label for="readybyXander">Xander</label>
+      </div>
+    </div>
+  </div>
+  <div id='booktags'>
+    <div id='tagcatalog' class='tagcatalog'>
+      <div id='tagHello' class='tagitem' style='grid-column:1;grid-row:1;'>
+        <span class='tagname'>really really spooky</span>
+        <img src="images/times-circle.svg" class='tagitemcross' />
+      </div>
+      <div id='tagGoodbye' class='tagitem' style='grid-column:2;grid-row:1;'>
+        <span class='tagname'>Goodbye</span>
+        <img src="images/times-circle.svg" class='tagitemcross' />
+      </div>
+      <div id='tagHello' class='tagitem' style='grid-column:3;grid-row:1;'>
+        <span class='tagname'>Hello</span>
+        <img src="images/times-circle.svg" class='tagitemcross' />
+      </div>
+      <div id='tagWednesday' class='tagitem' style='grid-column:4;grid-row:1;'>
+        <span class='tagname'>Wednesday</span>
+        <img src="images/times-circle.svg" class='tagitemcross' />
+      </div>
+      <div id='tagWonderful' class='tagitem' style='grid-column:5;grid-row:1;'>
+        <span class='tagname'>Wonderful</span>
+        <img src="images/times-circle.svg" class='tagitemcross' />
+      </div>
+      <div id='tagSubstantial' class='tagitem' style='grid-column:6;grid-row:1;'>
+        <span class='tagname'>Substantial</span>
+        <img src="images/times-circle.svg" class='tagitemcross' />
+      </div>
+    </div>
+    <div id='tagaddition'>
+      <input list='tagdatalist' id='taginput' class='taginput' />
+      <datalist id='tagdatalist'>
+        <option>really really spooky</option>
+        <option>Goodbye</option>
+        <option>Hello</option>
+        <option>Wednesday</option>
+        <option>Hello</option>
+        <option>Substantial</option>
+      </datalist>
+      <button id='tagbutton' class='tagaddbutton'>Add</button>
+    </div>
+  <div id='tagitemtemplate' class='tagitem notvisible'>
+    <div class='tagname'>Hello</div>
+    <img src="images/times-circle.svg" class='tagitemcross' />
+  </div>
+
+  </div>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+  </body>
+</html>

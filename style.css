@@ -1,0 +1,160 @@
+html{
+  font-size:16px;
+  font-family: Arial;
+  background-color:ghostwhite;
+}
+
+label
+{
+  margin: 4px
+}
+
+input
+{
+  margin: 4px
+}
+
+.bookdetails
+{
+  display: grid;
+  grid-template-columns: 7em 50em;
+  grid-auto-flow: row;
+}
+
+.borderedbox
+{
+  border: solid 1pt #333333;
+  padding: 8px;
+  margin: 1.5rem 7em ;
+}
+
+.borderedboxtitle
+{
+  background-color: ghostwhite;
+  width: 7em;
+  padding: .5em .25rem;
+  font-weight: bolder;
+}
+.readlayout
+{
+  display: grid;
+  grid-template-columns: 7em 38em;
+}
+
+.liftedcontent
+{
+  position: relative;
+  top: -1.5rem;
+}
+
+.episodeinputs
+{
+  width: 3em;
+}
+
+.redbox
+{
+  border: solid 2pt red;
+}
+
+.ratingcontainer 
+{
+  display: inline-grid;
+  grid-template-columns: repeat(5, 24px);
+  column-gap: 4px;
+}
+.rating
+{
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+}
+
+.rating-star
+{
+  background-image: url("images/star.svg");
+}
+
+.rating-star-full
+{
+  background-image: url("images/star-full.svg");
+}
+
+.rating-star-half
+{
+  background-image: url("images/star-half-alt.svg");
+}
+
+.influencecontainer
+{
+  display:inline-grid;
+  grid-template-columns: repeat(10, 24px) ;
+  grid-column-gap: 4px;
+  position:relative;
+  top: 4px;
+  margin-bottom: 8px;
+  max-width:50%;
+  padding: 4px;
+}
+
+.influencebase
+{
+  background-repeat:no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+}
+
+.tagitemcross
+{
+  width:16px;
+  height:16px;
+}
+
+.tagname
+{
+  display:inline-block;
+  font-size: 12px;
+  position: relative;
+  top:-2px;
+}
+
+.tagitem
+{
+  margin: 4px;
+  padding:8px;
+  display: inline-block;
+  border: outset 2px gray;
+  background-color: white;
+}
+
+.tagitemcross {
+  position: relative;
+  top:2px;
+}
+.tagcatalog
+{
+  margin: 8px;
+  padding: 16px;
+  border: inset 2px lightgray;
+  display: block;
+  width:70%;
+}
+
+.notvisible
+{
+  visibility: hidden;
+}
+
+.taginput
+{
+  font-size: 16px;
+}
+
+.tagaddbutton
+{
+  font-size: 16px;
+}
