@@ -131,6 +131,8 @@ EntryForm_Populate() {
     document.getElementById('bookcurrent').value = this.LibraryData.bookData.episode
     const seriesDetail = this.LibraryData.GetSeriesDetail(seriesName)
     document.getElementById('booktotal').value = seriesDetail.episodes
+
+    this.LibraryData.Ratings.Display()
   }
 
   FormatStars(theClassStem, theCurrentValue, theMaxValue, theHalfStar) {

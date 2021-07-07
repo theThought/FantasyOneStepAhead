@@ -14,6 +14,9 @@ input
   margin: 4px
 }
 
+.entryform {
+  z-index: 1;
+}
 .bookdetails
 {
   display: grid;
@@ -71,6 +74,36 @@ input
   width: 24px;
   height: 24px;
   display: inline-block;
+}
+
+.othersrating
+{
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+
+.readbystars {
+  display: inline-grid;
+  grid-template-columns: repeat(5, 16px);
+  column-gap: 4px;
+}
+
+.readbycontainer {
+  display: inline-grid;
+  grid-template-columns: repeat(2, auto);
+  column-gap: 8px;
+  row-gap: 4px;
+}
+
+.readbylist {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  column-gap: 8px;
+  row-gap: 4px;
 }
 
 .rating-star
@@ -157,4 +190,33 @@ input
 .tagaddbutton
 {
   font-size: 16px;
+}
+
+button {
+  padding: 8px;
+  width:80%;
+  margin-left: 10%;
+  margin-top: 1rem;
+  font-size: 1.25rem;
+}
+
+.readbydialog {
+  position:absolute;
+  left:25%;
+  top:30%;
+  width: 50%;
+  height: 10rem;
+  border: outset 2pt #cccccc;
+  z-index:100;
+  background-color:ivory;
+  padding: 16px;
+  font-size: 1.25rem;
+}
+
+.readbydialog input {
+  font-size: inherit;
+}
+
+.readbydialog div {
+  margin: 8px;
 }

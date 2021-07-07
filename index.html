@@ -28,27 +28,27 @@
         <label for="bookrating">Rating</label>
         
         <div class="ratingcontainer">
-        <span id="star1" class="rating rating-star-full"></span>
-        <span id="star2" class="rating rating-star"></span>
-        <span id="star3" class="rating rating-star"></span>
-        <span id="star4" class="rating rating-star"></span>
-        <span id="star5" class="rating rating-star"></span>
+          <span id="star1" class="rating rating-star-full"></span>
+          <span id="star2" class="rating rating-star"></span>
+          <span id="star3" class="rating rating-star"></span>
+          <span id="star4" class="rating rating-star"></span>
+          <span id="star5" class="rating rating-star"></span>
         </div>
       </div>
 
-<label for="bookinfluence">Influence</label>
-        <div id="influencecontainer" class="influencecontainer">
-          <span id="influence1" class="influencebase rating"></span>
-          <span id="influence2" class="influencebase rating"></span>
-          <span id="influence3" class="influencebase rating"></span>
-          <span id="influence4" class="influencebase rating"></span>
-          <span id="influence5" class="influencebase rating"></span>
-          <span id="influence6" class="influencebase rating"></span>
-          <span id="influence7" class="influencebase rating"></span>
-          <span id="influence8" class="influencebase rating"></span>
-          <span id="influence9" class="influencebase rating"></span>
-          <span id="influence10" class="influencebase rating"></span>
-        </div>
+      <label for="bookinfluence">Influence</label>
+      <div id="influencecontainer" class="influencecontainer">
+        <span id="influence1" class="influencebase rating"></span>
+        <span id="influence2" class="influencebase rating"></span>
+        <span id="influence3" class="influencebase rating"></span>
+        <span id="influence4" class="influencebase rating"></span>
+        <span id="influence5" class="influencebase rating"></span>
+        <span id="influence6" class="influencebase rating"></span>
+        <span id="influence7" class="influencebase rating"></span>
+        <span id="influence8" class="influencebase rating"></span>
+        <span id="influence9" class="influencebase rating"></span>
+        <span id="influence10" class="influencebase rating"></span>
+      </div>
         
       <label for="bookseries">Series</label>
       <input id="bookseries" />
@@ -60,26 +60,31 @@
         <input id="booktotal" type="number" class="episodeinputs" />
       </div>
     </div>
+
     <div class="readwhen borderedbox">
-        <div class="readwhentitle borderedboxtitle liftedcontent">When to read</div>
-        <div class="readlayout liftedcontent">
-          <label for="readafter">After</label>
-          <input id="readafter" />
-          <label for="readbefore">Before</label>
-          <input id="readbefore" />
-        </div>
-      </div>
-    <div class="readgroup borderedbox">
-      <div class="readgrouptitle borderedboxtitle liftedcontent">Read By</div>
-      <div class="liftedcontent">
-        <input id="readybyKelly" type="checkbox" /><label for="readybyKelly">Kelly</label>
-        <input id="readybyKevin" type="checkbox" /><label for="readybyKevin">Kevin</label>
-        <input id="readybyDominic" type="checkbox" /><label for="readybyDominic">Dominic</label>
-        <input id="readybyXander" type="checkbox" /><label for="readybyXander">Xander</label>
+      <div class="readwhentitle borderedboxtitle liftedcontent">When to read</div>
+      <div class="readlayout liftedcontent">
+        <label for="readafter">After</label>
+        <input id="readafter" />
+        <label for="readbefore">Before</label>
+        <input id="readbefore" />
       </div>
     </div>
-  </div>
-  <div id='booktags'>
+    <article class="readgroup borderedbox">
+      <div class="readgrouptitle borderedboxtitle liftedcontent">Read By</div>
+      <div class="liftedcontent">
+        <div class='readbylist'>
+          <section id='readbycontainer' class='readbycontainer'>
+          
+          </section>
+        </div>
+        <footer>
+          <button id='addreader' class='addreaderbutton'>Add Reader</button>
+        </footer>
+      </div>
+    </article>
+
+    <div id='booktags'>
     <div id='tagcatalog' class='tagcatalog'>
       <div id='tagHello' class='tagitem' style='grid-column:1;grid-row:1;'>
         <span class='tagname'>really really spooky</span>
@@ -118,13 +123,34 @@
       </datalist>
       <button id='tagbutton' class='tagaddbutton'>Add</button>
     </div>
-  <div id='tagitemtemplate' class='tagitem notvisible'>
-    <div class='tagname'>Hello</div>
-    <img src="images/times-circle.svg" class='tagitemcross' />
+    <div id='tagitemtemplate' class='tagitem notvisible'>
+      <div class='tagname'>Hello</div>
+      <img src="images/times-circle.svg" class='tagitemcross' />
+    </div>
   </div>
+</div>
+  
 
+<div id='readbydialog' class='readbydialog notvisible'>
+  <div>
+  <label for='readbynameinput'>Reader's Name: </label>
+  <input id='readbynameinput' />
   </div>
+  <div>
+  <span>Score:</span>
+  <div class="ratingcontainer">
+    <span id="star1" class="rating rating-star-full"></span>
+    <span id="star2" class="rating rating-star"></span>
+    <span id="star3" class="rating rating-star"></span>
+    <span id="star4" class="rating rating-star"></span>
+    <span id="star5" class="rating rating-star"></span>
+  </div>
+  </div>
+  <button id='RatingsDialogOk'>OK</button>
+</div>
+
   <script src="data.js"></script>
+  <script src="ratings.js"></script>
   <script src="script.js"></script>
-  </body>
+</body>
 </html>
